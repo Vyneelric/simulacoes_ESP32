@@ -62,7 +62,7 @@
     [ "ldr1:GND", "bb1:24t.a", "black", [ "v0" ] ],
     [ "ldr1:VCC", "bb1:28t.a", "red", [ "h28.8", "v105.6" ] ],
     [ "bb1:28t.e", "esp:3V3", "green", [ "v0" ] ],
-    [ "bb1:24t.e", "esp:4", "green", [ "v0" ] ]
+    [ "ldr1:AO", "esp:34", "green", [ "v297.6", "h-73.3" ] ]
   ],
   "dependencies": {}
 }
