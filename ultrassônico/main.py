@@ -17,9 +17,7 @@ led_intruso = Pin(PINO_LED_INTRUSO, Pin.OUT)
 
 # --- Função de Medição de Distância (sem alterações) ---
 def obter_distancia():
-    """
-    Mede a distância em centímetros usando o sensor HC-SR04.
-    """
+
     trig.value(0)
     time.sleep_us(2)
 
