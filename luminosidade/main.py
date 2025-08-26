@@ -22,9 +22,9 @@ while True:
     
     if valor_luminosidade < LIMIAR_ESCURO:
         
-        print("Ambiente claro! LED Apagado.")
-        led_escuro.value(0)
-    else:
         print("Ambiente escuro! Acendendo o LED.")
         led_escuro.value(1)
+    else:
+        print("Ambiente claro! LED Apagado.")
+        led_escuro.value(0)
     time.sleep(1)
