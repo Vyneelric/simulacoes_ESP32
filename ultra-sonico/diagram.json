@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "author": "Joao Victor",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": -9.6,
+      "left": -187.16,
+      "attrs": { "env": "micropython-20231227-v1.22.0" }
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -113.7,
+      "left": 5.5,
+      "attrs": { "distance": "274" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "ultrasonic1:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "ultrasonic1:TRIG", "esp:25", "green", [ "v0" ] ],
+    [ "ultrasonic1:ECHO", "esp:27", "green", [ "v134.4", "h-279.35" ] ],
+    [ "ultrasonic1:VCC", "esp:5V", "red", [ "v240", "h-259.35" ] ]
+  ],
+  "dependencies": {}
+}
